@@ -22,7 +22,7 @@ if (isset($_GET['passwordLength'])) {
     <div class="container my-5">
         <h1 class="text-center">Ecco la tua password</h1>
         <div class="my-3">
-            <div class="border border-success text-bg-secondary">
+            <div class="border text-bg-secondary p-3">
                 <h2 class="text-center my-3">
                     <?php echo $_SESSION['password']; ?>
                 </h2>
