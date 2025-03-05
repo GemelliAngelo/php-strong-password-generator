@@ -1,6 +1,6 @@
 <?php
 
-function randomPasswordGenerator($length = 12) {
+function randomPasswordGenerator($length = 8) {
     $caratteri = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_=+';
     $password = '';
     $max = strlen($caratteri) - 1;
