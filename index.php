@@ -18,19 +18,19 @@ session_start();
         <div class="d-flex justify-content-center align-items-center my-5 border p-5 text-bg-secondary">
             <form action="./result.php">
                 <label for="passwordLength" class="form-label">Inserisci la lunghezza della password da generare</label>
-                <input type="number" name="passwordLength" id="passwordLength" class="form-control">
+                <input type="number" name="passwordLength" id="passwordLength" class="form-control" required>
                 <div class="mt-5 mb-3">
                   <div class="form-check form-check-inline pe-4 border-end border-dark">
                     <label for="alphabetic" class="form-check-label">Includi lettere</label>
-                    <input type="checkbox" name="alphabetic" id="alphabetic" class="form-check-input">
+                    <input type="checkbox" name="alphabetic" id="alphabetic" class="form-check-input" checked>
                   </div>
                   <div class="form-check form-check-inline pe-4 border-end border-dark">
                     <label for="numbers" class="form-check-label">Includi numeri</label>
-                    <input type="checkbox" name="numbers" id="numbers" class="form-check-input">
+                    <input type="checkbox" name="numbers" id="numbers" class="form-check-input" checked>
                   </div>
                   <div class="form-check form-check-inline">
                     <label for="symbols" class="form-check-label">Includi simboli</label>
-                    <input type="checkbox" name="symbols" id="symbols" class="form-check-input">
+                    <input type="checkbox" name="symbols" id="symbols" class="form-check-input" checked>
                   </div>
                 </div>
                 <div class="d-flex justify-content-center gap-2">

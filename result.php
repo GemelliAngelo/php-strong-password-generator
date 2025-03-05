@@ -4,9 +4,7 @@ require_once "./functions.php";
 
 session_start();
 
-if (isset($_GET['passwordLength'])) {
-    $_SESSION['password'] = randomPasswordGenerator($_GET['passwordLength']);
-  }
+getSession()
 
 ?>
 
