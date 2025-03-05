@@ -24,12 +24,25 @@ function randomPasswordGenerator($length = 12) {
   <body>
     <div class="container">
         <h1>GENERATORE DI PASSWORD CASUALI</h1>
-        <div class="d-flex align-items-center my-5">
+        <div class="d-flex justify-content-center align-items-center my-5">
             <form action="">
                 <label for="passwordLength" class="form-label">Inserisci la lunghezza della password da generare</label>
                 <input type="number" name="passwordLength" id="passwordLength" class="form-control">
+                <button type="submit" class="btn btn-success w-100 mt-3">Genera</button>
             </form>
-        </div>
+          </div>
+            <div>
+              <h2>
+                Password generata:
+                <?php
+                if (isset($_GET["passwordLength"])){
+                  echo randomPasswordGenerator($_GET["passwordLength"]); 
+                } else {
+                  echo "Non hai inserito la lunghezza della password";
+                }
+                 ?>
+            </h2>
+            </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
