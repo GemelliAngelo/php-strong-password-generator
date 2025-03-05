@@ -1,15 +1,6 @@
 <?php
-function randomPasswordGenerator($length = 12) {
-    $caratteri = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_=+';
-    $password = '';
-    $max = strlen($caratteri) - 1;
 
-    for ($i = 0; $i < $length; $i++) {
-        $password .= $caratteri[random_int(0, $max)];
-    }
-
-    return $password;
-}
+require_once "./functions.php";
 
 ?>
 
@@ -22,7 +13,7 @@ function randomPasswordGenerator($length = 12) {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
   <body>
-    <div class="container">
+    <div class="container my-5">
         <h1>GENERATORE DI PASSWORD CASUALI</h1>
         <div class="d-flex justify-content-center align-items-center my-5">
             <form action="">
